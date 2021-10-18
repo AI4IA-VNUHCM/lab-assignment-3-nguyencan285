@@ -23,14 +23,18 @@ void Ex1(int arr[], int n)
 	  //    return check=1;
 	//}
 	for(i=0,j=n-1;(1<=floor(n-1)/2)&&(j>=ceil(n-1)/2);i++,j--)
+	{ 
+		if(arr[i]==arr[j])
+	     check=1;
+	}
+    if (check==1)
 	{
-    if (check==0)
-	printf("asymmetric");
+	printf("symmetric");}
 	else
-	printf("symmetric");
+	printf("asymmetric");
 	
 	}
-}
+
 
 int main(int argc, char *argv[]) {
 	//testing variable, applying it to your algorithm for auto-evaluating
