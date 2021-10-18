@@ -17,7 +17,7 @@ int Ex1(int arr[], int n)
 	//Your codes here
 	int i,j;
 	int check=1;
-	for (i=0,j = n-1;i<n;i++,j--)
+	for (i=0,j = n-1;i<n-1;i++,j--)
 	{ 
 		if(arr[i]==arr[j])
 	      return check=1;
