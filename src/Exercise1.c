@@ -27,11 +27,11 @@ void Ex1(int arr[], int n)
 		if(arr[i]==arr[j])
 	     check=1;
 	}
-    if (check==1)
+    if (check==0)
 	{
-	printf("symmetric");}
+	printf("asymmetric");}
 	else
-	printf("asymmetric");
+	printf("symmetric");
 	
 	}
 
