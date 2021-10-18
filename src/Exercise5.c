@@ -17,7 +17,7 @@ void Ex5(int testcase[], int n)
 	int i,j;
 	for(i=0;i<n;i++)
 	for(j=i+1;j<n;j++)
-	if (testcase[j]>testcase[i])
+	if ((testcase[j]<testcase[i]) )
 	{
 		int temp;
 		temp=testcase[i];

@@ -11,10 +11,50 @@ ______________________________________
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+int check;
+void decre(int arr[],int n){
+int y=0;
+int j;
+for (int i =0, j=n-1;i<n;i++,j++)
+    {
+        if (arr[i]>arr[j])
+        {
+            y++;
+        }
 
-int Ex4(int arr[], int n){
+    }
+    if(y==n-1)
+    {
+         check =-1;
+    }
+}
+void incre(int arr[],int n)
+{
+    int x=0;
+    for (int i=0;i<n-1;i++)
+    {
+        if (arr[i]<arr[i+1])
+        {
+            x++;
+        }
+    }
+    if(x==n-1)
+    {
+        check = 1;
+    }
+}
+
+int Ex4(int arr[], int n)
+{
 	//Your codes here
-	
+	incre(arr, n);
+    decre(arr, n);
+    if (check!=1 && check!=-1)
+    {
+        check =0;
+    }
+	printf("%d",check);
+  return check; 
 }
 
 int main(int argc, char *argv[]) {
