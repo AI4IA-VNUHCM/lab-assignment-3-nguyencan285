@@ -12,7 +12,8 @@ Ex:
 #include <stdlib.h>
 #include <math.h>
 
-int Ex1(int arr[], int n){
+int Ex1(int arr[], int n)
+{
 	//Your codes here
 	int i,j;
 	int check=1;

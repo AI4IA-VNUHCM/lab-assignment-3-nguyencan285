@@ -12,9 +12,10 @@ ______________________________________
 #include <stdlib.h>
 #include <math.h>
 int check;
-void decre(int arr[],int n){
+void decre(int arr[],int n)
+{
 int y=0;
-int j;
+int j=n-1,i=0;
 for (int i =0, j=n-1;i<n;i++,j++)
     {
         if (arr[i]>arr[j])
@@ -27,11 +28,13 @@ for (int i =0, j=n-1;i<n;i++,j++)
     {
          check =-1;
     }
+	
 }
 void incre(int arr[],int n)
 {
     int x=0;
-    for (int i=0;i<n-1;i++)
+	int i;
+    for (i=0;i<n-1;i++)
     {
         if (arr[i]<arr[i+1])
         {
@@ -42,19 +45,21 @@ void incre(int arr[],int n)
     {
         check = 1;
     }
+
+	
 }
 
-int Ex4(int arr[], int n)
+void Ex4(int arr[], int n)
 {
 	//Your codes here
+
 	incre(arr, n);
     decre(arr, n);
     if (check!=1 && check!=-1)
     {
         check =0;
     }
-	printf("%d",check);
-  return check; 
+  printf("%d",check);
 }
 
 int main(int argc, char *argv[]) {
@@ -65,7 +70,7 @@ int main(int argc, char *argv[]) {
 		testcase[i] = atoi(argv[i+1]);
 	}
 	
-	printf("%d", Ex4(testcase, argc));
+	 Ex4(testcase, argc);
 
 	return 0;
 }
