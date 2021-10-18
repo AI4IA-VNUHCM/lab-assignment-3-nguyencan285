@@ -13,6 +13,15 @@ ______________________________________
 
 void Ex5(int arr[], int n){
 	//Your codes here
+	int i,j;
+	for(i=0,j=i+1;i<n;i++,j++)
+	if (arr[i]<arr[j])
+	{
+		int temp;
+		temp=arr[i];
+		arr[i] =arr[j];
+		arr[j]=temp;
+	}
 	
 }
 
