@@ -12,10 +12,29 @@ Ex:
 #include <stdlib.h>
 #include <math.h>
 
-void Ex1(int arr[], int n){
+void Ex1(int arr[], int n)
+{
 	//Your codes here
-    
-}
+	int i,j;
+	int check=1;
+	//for (i=0,j = n-1;i<n-1;i++,j--)
+	//{ 
+	//	if(arr[i]==arr[j])
+	  //    return check=1;
+	//}
+	for(i=0,j=n-1;(1<=floor(n-1)/2)&&(j>=ceil(n-1)/2);i++,j--)
+	{ 
+		if(arr[i]==arr[j])
+	     check=1;
+	}
+    if (check==0)
+	{
+	printf("asymmetric");}
+	else
+	printf("symmetric");
+	
+	}
+
 
 int main(int argc, char *argv[]) {
 	//testing variable, applying it to your algorithm for auto-evaluating

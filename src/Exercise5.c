@@ -11,9 +11,21 @@ ______________________________________
 #include <stdlib.h>
 #include <math.h>
 
-void Ex5(int arr[], int n){
+void Ex5(int testcase[], int n)
+{
 	//Your codes here
-	
+	int i,j;
+	for(i=0;i<n;i++)
+	for(j=i+1;j<n;j++)
+	if ((testcase[j]<testcase[i]) )
+	{
+		int temp;
+		temp=testcase[i];
+		testcase[i] =testcase[j];
+		testcase[j]=temp;
+	}
+	for (i=0;i<n;i++)
+	printf("%d ",testcase[i]);
 }
 
 int main(int argc, char *argv[]) {
