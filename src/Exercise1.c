@@ -22,7 +22,7 @@ void Ex1(int arr[], int n)
 	//	if(arr[i]==arr[j])
 	  //    return check=1;
 	//}
-	for(i=0,n=n-1;(1<=floor(n-1)/2)&&(j>=ceil(n-1)/2);i++,j--)
+	for(i=0,j=n-1;(1<=floor(n-1)/2)&&(j>=ceil(n-1)/2);i++,j--)
 	{
     if (check==0)
 	printf("asymmetric");
