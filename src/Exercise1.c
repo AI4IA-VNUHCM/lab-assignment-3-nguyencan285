@@ -12,17 +12,20 @@ Ex:
 #include <stdlib.h>
 #include <math.h>
 
-void Ex1(int arr[], int n){
+int Ex1(int arr[], int n){
 	//Your codes here
 	int i,j;
+	int check=1;
 	for (i=0,j = n-1;i<n;i++,j--)
 	{ 
 		if(arr[i]==arr[j])
-	printf("symmetric");
+	      return check;
+	}
+    if (check!=1)
+	printf("asymmetric");
 	else
 	printf("asymmetric");
-	}
-    
+	return 0;
 }
 
 int main(int argc, char *argv[]) {
