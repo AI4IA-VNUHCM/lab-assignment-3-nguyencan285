@@ -20,7 +20,7 @@ int Ex1(int arr[], int n)
 	for (i=0,j = n-1;i<n;i++,j--)
 	{ 
 		if(arr[i]==arr[j])
-	      return check;
+	      return check=1;
 	}
     if (check!=1)
 	printf("asymmetric");
